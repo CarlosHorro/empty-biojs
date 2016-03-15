@@ -1,0 +1,31 @@
+{
+  "name": "empty-biojs",
+  "description": "",
+  "version": "0.1.2",
+  "homepage": "https://github.com/horroc/empty-biojs",
+  "author": {
+    "name": "horroc",
+    "email": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/horroc/empty-biojs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/horroc/empty-biojs/issues"
+  },
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "scripts": {
+		"test": "echo 'Error: no test specified' && exit 1",
+		"build": "mkdirp build && browserify -r ./:empty-biojs -o build/biojs.js",
+		"build-browser": "npm run build",
+		"prepublish": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+		"mkdirp": "^0.5.0",
+		"browserify": "6.x"
+  }, 
+  "keywords": ["test"]
+}
